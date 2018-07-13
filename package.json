@@ -1,0 +1,13 @@
+{
+  "name": "mongoose-promise-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wahyubucil/mongoose-promise-practice.git",
+  "author": "Wahyu Budi Saputra <wahyubucil@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "mongoose": "^5.2.3",
+    "validator": "^10.4.0"
+  }
+}
