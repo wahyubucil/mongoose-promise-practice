@@ -17,6 +17,7 @@ EmailModel
     )
     .then(doc => {
         console.log(doc);
+        console.log(doc.created_at < doc.updated_at); // Check whether updated_at work or not
     })
     .catch(err => {
         console.error(err);
