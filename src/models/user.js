@@ -18,6 +18,19 @@ userSchema.virtual('fullName').set(function(name) {
 
 userSchema.methods.getInitials = function() {
     return this.firstName[0] + this.lastName[0];
-}
+};
+
+userSchema.statics.getUsers = function() {
+    return new Promise((resolve, reject) => {
+        this.find((err, docs) => {
+            if (err) {
+                console.error(err);
+                return reject(err);
+            }
+
+            resolve(docs);
+        });
+    });
+};
 
 module.exports = mongoose.model('User', userSchema);
