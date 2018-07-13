@@ -6,6 +6,7 @@
   "author": "Wahyu Budi Saputra <wahyubucil@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "dotenv": "^6.0.0",
     "mongoose": "^5.2.3",
     "validator": "^10.4.0"
